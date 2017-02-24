@@ -22,21 +22,6 @@ object AdHocPoly extends App {
     }
   }
 
-  object g extends Poly
-
-  println(f(3))
-  println(f("Foo"))
-}
-
-object ShapelessPoly extends App {
-  import shapeless._
-  import poly._
-
-  object f extends Poly1 {
-    implicit val intCase    = at[Int   ] { x => "It Works! " * x}
-    implicit val stringCase = at[String] { x => x.length        }
-  }
-
   println(f(3))
   println(f("Foo"))
 }

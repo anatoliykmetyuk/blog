@@ -3,5 +3,5 @@ source "https://rubygems.org"
 gem "github-pages"
 gem "rouge"
 gem 'jekyll-sitemap'
-gem 'jekyll_github_sample'
+gem 'jekyll_github_sample'  # https://github.com/bwillis/jekyll-github-sample
 gem 'jekyll-plantuml'
