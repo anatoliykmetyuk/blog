@@ -1,0 +1,13 @@
+- Boilerplate generation: build.sbt:138; project/Boilerplate.scala; jvm/target/scala-2.11/src_managed
+
+- trait Poly extends PolyApply
+
+- trait PolyApply { def apply[A](a:A)(implicit cse : Case[this.type, A::HNil]) } - cse is a typeclass representing a case that does all the job
+
+- abstract class Case[P, L <: HList]
+
+- at[A, B, C]: CaseBuilder
+
+- PolyN traits
+  - PolyN#Case
+  - PolyN#CaseBuilder
