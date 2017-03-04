@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 
-gem "github-pages"
+gem 'jekyll', '~> 3.0.0'
 gem "rouge"
 gem 'jekyll-sitemap'
 gem 'jekyll_github_sample'  # https://github.com/bwillis/jekyll-github-sample
 gem 'jekyll-plantuml'
+gem 'jekyll-redirect-from'
+gem 'jekyll-paginate'
+gem "jekyll-pandoc"

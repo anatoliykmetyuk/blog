@@ -42,6 +42,7 @@ object Main extends NatFramework with ListFComponent with CataComponent {
     //   )
     // )  // 3
 
+    // start snippet cool-thingy
     // List
     type ListOfInts[T] = ListF[Int, T]
     val list: Fix[ListOfInts] = Fix(ConsF(1, Fix(ConsF(2, Fix(ConsF(3, Fix[ListOfInts](NilF)))))))
@@ -52,6 +53,7 @@ object Main extends NatFramework with ListFComponent with CataComponent {
     }
 
     println(listResult)  // 6
+    // end snippet cool-thingy
 
     // Nat
     val threeNat: Fix[Nat] = Fix(Succ(Fix(Succ(Fix(Succ(Fix[Nat](Zero)))))))

@@ -66,7 +66,7 @@ In the code below, consider `eventSystem` to be some object you can register and
 
 Then, the above example would be expressed as follows:
 
-{% highlight scala %}
+```scala
 // button(first) * setText(textField, "Hello World")
 val firstButtonCallback: Event => Unit = e => {
   if (e.button == first) {  // button(first) action: `first` was clicked
@@ -96,7 +96,7 @@ val secondButtonCallback: Event => Unit = e => {
 // button(first) * setText(textField, "Hello World") + button(second) * setText(textField, "Something Else")
 eventSystem.register(firstButtonCallback )
 eventSystem.register(secondButtonCallback)
-{% endhighlight %}
+```
 
 # Conclusion
 This first part of the progress report introduced the concept of process algebra and demonstrated how it can be used in practice. In the [second part](/blog/2017/01/12/rewriting-process-algebra-part-2-engine-theory.html), we will have a look at the standard implementation of an engine for SubScript that is able to execute PA expressions. Also, we will introduce a possibility of an alternative implementation of the engine, FreeACP.

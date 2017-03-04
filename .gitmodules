@@ -1,0 +1,9 @@
+[submodule "src/_pandoc/pandocfilters"]
+	path = src/_pandoc/pandocfilters
+	url = https://github.com/jgm/pandocfilters.git
+[submodule "src/_pandoc/pandoc-plantuml-filter"]
+	path = src/_pandoc/pandoc-plantuml-filter
+	url = https://github.com/kbonne/pandoc-plantuml-filter.git
+[submodule "src/_pandoc/pandoc-include-code"]
+	path = src/_pandoc/pandoc-include-code
+	url = https://github.com/owickstrom/pandoc-include-code.git

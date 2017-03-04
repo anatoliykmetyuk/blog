@@ -8,10 +8,20 @@ paginate: 25
 
 destination: ../out
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+markdown: Pandoc
+pandoc:
+  extensions:
+    - webtex
+    - toc
+    - standalone
+    - highlight-style: pygments
+    - filter: _pandoc/pandocfilters/examples/graphviz.py
+    - filter: _pandoc/pandoc-plantuml-filter/dist/build/pandoc-plantuml-filter/pandoc-plantuml-filter
+    - filter: _pandoc/pandoc-include-code/dist/build/pandoc-include-code/pandoc-include-code
+
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
 # redcarpet:
 #   extensions: ["strikethrough"]
 
@@ -20,3 +30,5 @@ gems:
   - jekyll-sitemap
   - jekyll_github_sample
   - jekyll-plantuml
+  - jekyll-paginate
+  - jekyll-pandoc
